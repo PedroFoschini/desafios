@@ -4,17 +4,17 @@ main(){
   var valorInicial1 = 0;
   var valorInicial2 = 1;
 
-  print('Print de fibonacci iniciando com $valorInicial1 e $valorInicial2:');
+  print('Fibonacci iniciando com $valorInicial1 e $valorInicial2:');
 
   fibonacci(primeiroValor: valorInicial1, segundoValor: valorInicial2);
 
 }
 
-void fibonacci({required int primeiroValor, required int segundoValor, bool jaExecutou = false}){
+void fibonacci({required int primeiroValor, required int segundoValor, bool executou = false}){
 
   int soma = primeiroValor + segundoValor;
 
-  if(!jaExecutou){
+  if(!executou){
     print(primeiroValor);
     print(segundoValor);
   }
@@ -22,7 +22,7 @@ void fibonacci({required int primeiroValor, required int segundoValor, bool jaEx
   print(soma);
 
   if(soma < 9000){
-    fibonacci(primeiroValor: segundoValor, segundoValor: soma, jaExecutou: true);
+    fibonacci(primeiroValor: segundoValor, segundoValor: soma, executou: true);
   }
   
 }
