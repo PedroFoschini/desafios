@@ -6,11 +6,11 @@ main(){
 
   print('Print de fibonacci iniciando com $valorInicial1 e $valorInicial2:');
 
-  fibonacci(primeiroValor: valorInicial1, segundoValor: valorInicial2, jaExecutou: false);
+  fibonacci(primeiroValor: valorInicial1, segundoValor: valorInicial2);
 
 }
 
-void fibonacci({required int primeiroValor, required int segundoValor, required bool jaExecutou}){
+void fibonacci({required int primeiroValor, required int segundoValor, bool jaExecutou = false}){
 
   int soma = primeiroValor + segundoValor;
 
