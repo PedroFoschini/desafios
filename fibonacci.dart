@@ -21,6 +21,7 @@ void fibonacci({required int primeiroValor, required int segundoValor, bool exec
 
   print(soma);
 
+  // if apenas para limitar a quantidade de repetições
   if(soma < 9000){
     fibonacci(primeiroValor: segundoValor, segundoValor: soma, executou: true);
   }
