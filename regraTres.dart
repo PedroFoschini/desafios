@@ -37,7 +37,7 @@ main() {
   }
 
   var r4;
-  if(quartaResposta is String && quartaResposta.length > 0 && quartaResposta == 'S'){
+  if(quartaResposta is String && quartaResposta.length > 0 && quartaResposta.toUpperCase() == 'S'){
     r4 = true;
   } else{
     r4 = false;
