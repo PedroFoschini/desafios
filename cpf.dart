@@ -13,6 +13,8 @@ main() {
       print('');
       print(instanciaCpf.validarCompleto() ? 'CPF válido!' : 'CPF inválido!');
       tamanhoInvalido = false;
+    } else{
+      print('Tamanho inválido, tente novamente!');
     }
   }
 
